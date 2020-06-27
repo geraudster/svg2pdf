@@ -4,6 +4,8 @@ RUN apt update && apt install -y software-properties-common poppler-utils fonts-
 RUN add-apt-repository ppa:inkscape.dev/stable &&\
   apt install -y inkscape
 
+RUN apt install -y zip unzip rename
+
 ARG user=inkscape
 ARG INKSCAPE_HOME=/home/inkscape
 
